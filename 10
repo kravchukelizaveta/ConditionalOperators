@@ -1,0 +1,13 @@
+#определите количество локальных максимумов в последовательности
+if __name__ == '__main__':
+    preNumber = int(input())
+    number = int(input())
+    postNumber = int(input())
+    count = 0
+    while postNumber != 0:
+        if number > postNumber and number > preNumber:
+            count += 1
+        preNumber = number
+        number = postNumber
+        postNumber = int(input())
+    print(count)
