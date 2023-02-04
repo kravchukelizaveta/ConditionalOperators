@@ -1,0 +1,10 @@
+#может ли шахматный король попасть с первой клетки на вторую одним ходом
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    d = int(input())
+    if ((a - c) == (b - d)) or (a == c or b == d):
+        print('yes')
+    else:
+        print('no')
