@@ -1,0 +1,20 @@
+#вывести числа в порядке возрастания
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    if a > b:
+        temp = a
+        a = b
+        b = temp
+    if b > c:
+        temp = b
+        b = c
+        c = temp
+    if a > b:
+        temp = a
+        a = b
+        b = temp
+    print(a)
+    print(b)
+    print(c)
