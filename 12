@@ -1,0 +1,11 @@
+#определить, какое по счету число четное
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    if a % 2 == 0:
+        print(1)
+    elif b % 2 == 0:
+        print(2)
+    else:
+        print(3)
