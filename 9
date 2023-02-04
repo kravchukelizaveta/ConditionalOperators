@@ -1,0 +1,17 @@
+#найти предмаксимальное число
+if __name__ == '__main__':
+    a = int(input())
+    b = int(input())
+    max = 0
+    preMax = 0
+    if a > b:
+        max = a
+        preMax = b
+    else:
+        preMax = a
+        max = b
+    while a != 0:
+        if a < max and a > preMax:
+            preMax = a
+        a = int(input())
+    print(preMax)
