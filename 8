@@ -1,0 +1,35 @@
+#максимальное количество подряд идущих элементов
+if __name__ == '__main__':
+    preNumber = int(input())
+    number = int(input())
+    count = 1
+    if preNumber == number:
+        count = count + 1
+        maxCount = count
+    while number != 0:
+        preNumber = number
+        number = int(input())
+    if preNumber == number:
+        count += 1
+    if count > maxCount:
+        maxCount = count
+    else:
+        count = 1
+        print(maxCount)
+        
+        
+#максимальное количество подряд идущих элементов
+if __name__ == '__main__':
+    a = int(input())
+    c = 1
+    b = 0
+    while a != 0:
+        v = int(input())
+        a, v = v, a
+        if v == a:
+            c += 1
+        if c > b:
+            b = c
+        if a != v:
+            c = 1
+    print(b)
