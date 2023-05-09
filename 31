@@ -1,0 +1,14 @@
+#найти самый большой локальный максимум
+if __name__ == '__ main __':
+    preNumber = int(input())
+    number = int(input())
+    postNumber = int(input())
+    maximum = -2 ** 31
+    while postNumber != 0:
+        if number > postNumber and number > preNumber:
+            if maximum < number:
+                maximum = number
+    preNumber = number
+    number = postNumber
+    postNumber = int(input())
+    print(maximum)
