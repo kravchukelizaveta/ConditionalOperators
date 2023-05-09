@@ -1,0 +1,9 @@
+#найти в последовательности максимальное число
+if __name__ == '__ main __':
+    a = int(input())
+    maximum = a
+    while a != 0:
+        if maximum < a:
+            maximum = a
+    a = int(input())
+    print(maximum)
