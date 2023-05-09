@@ -1,0 +1,9 @@
+#найти в последовательности минимальное число
+if __name__ == '__ main __':
+    a = int(input())
+    minimum = a
+    while a != 0:
+        if minimum > a:
+            minimum = a
+    a = int(input())
+    print(minimum)
