@@ -1,0 +1,18 @@
+#последовательность из натуральных чисел, завершается 0. Определить наибольшее число подряд элементов равных друг другу
+if __name__ == '__ main __':
+    preNumber = int(input())
+    number = int(input())
+    count = 1
+    if preNumber == number:
+        count = count + 1
+        maxCount = count
+        while number != 0:
+            preNumber = number
+            number = int(input())
+            if preNumber == number:
+                count += 1
+                if count > maxCount:
+                    maxCount = count
+                else:
+                    count = 1
+                    print(maxCount)
